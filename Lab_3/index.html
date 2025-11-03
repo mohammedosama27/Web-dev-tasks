@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>iOS Calculator</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<main class="calculator" role="application" aria-label="Calculator">
+			<div class="screen">
+				<div class="previous" id="previous" aria-hidden="true"></div>
+				<div class="current" id="display" aria-live="polite">0</div>
+			</div>
+
+			<div class="keys" id="keys">
+				<button class="key key--function" data-action="clear">AC</button>
+				<button class="key key--function" data-action="sign">+/-</button>
+				<button class="key key--function" data-action="percent">%</button>
+				<button class="key key--operator" data-action="operator" data-value="/">÷</button>
+
+				<button class="key" data-action="number">7</button>
+				<button class="key" data-action="number">8</button>
+				<button class="key" data-action="number">9</button>
+				<button class="key key--operator" data-action="operator" data-value="*">×</button>
+
+				<button class="key" data-action="number">4</button>
+				<button class="key" data-action="number">5</button>
+				<button class="key" data-action="number">6</button>
+				<button class="key key--operator" data-action="operator" data-value="-">−</button>
+
+				<button class="key" data-action="number">1</button>
+				<button class="key" data-action="number">2</button>
+				<button class="key" data-action="number">3</button>
+				<button class="key key--operator" data-action="operator" data-value="+">+</button>
+
+				<button class="key key--zero" data-action="number">0</button>
+				<button class="key" data-action="decimal">.</button>
+				<button class="key key--equals" data-action="equals">=</button>
+			</div>
+		</main>
+
+		<script src="logic.js" defer></script>
+	</body>
+</html>
