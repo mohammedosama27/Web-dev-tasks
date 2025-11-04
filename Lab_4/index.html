@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>To Do List</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<main class="app">
+			<h1>My Todo List</h1>
+
+			<div class="task-entry">
+				<input id="task-input" type="text" placeholder="Add a new task..." aria-label="Task description" />
+				<button id="add-btn">Add Task</button>
+			</div>
+
+			<ul id="task-list" class="task-list" aria-live="polite"></ul>
+
+			<footer class="footer">
+				<small>Click a task to toggle completion. Use the trash icon to delete.</small>
+			</footer>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
+</html>
+
